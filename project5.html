@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="project5.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+
+</head>
+
+
+<body>
+  <header>
+    <div class="navbar">
+
+      <ul class="links" type="none">
+        <div class="dropdown">All Pages
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+            class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+            <path
+              d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+          </svg>
+        </div>
+        <div class="dropdown-sy">
+          <div class="bc">
+            <li><a href=""><span style="font-weight: bold; color: white;">Menu</span></a></li>
+            <li><a href="project5.html" class="acolo">Home1</a></li>
+            <li><a href="" class="acolo">About</a></li>
+            <li><a href="" class="acolo">Contactus</a></li>
+          </div>
+          <div class="bc">
+            <li><a href="" class="acolo"><span style="font-weight: bold; color: white;">CMS</span></a></li>
+            <li><a href="" class="acolo">product page</a></li>
+
+
+          </div>
+
+        </div>
+      </ul>
+      <div class="navbi">
+        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor"
+          class=" bi bi-justify fw-bold mt-4 d-lg-none  d-flex text-light" viewBox="0 0 16 16">
+          <path fill-rule="evenodd"
+            d="M2 12.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5m0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5m0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5m0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5" />
+        </svg>
+        <ul type="none" class="mt-3 d-lg-none  d-flex">
+          <div class="dropdown-sx">
+            <div class="bc">
+              <li><a href="">Menu</a></li>
+              <li><a href="">Home1</a></li>
+              <li><a href="">Home2</a></li>
+              <li><a href="">About</a></li>
+            </div>
+            <div class="bc">
+              <li><a href="">Menu</a></li>
+              <li><a href="">Home1</a></li>
+              <li><a href="">Home2</a></li>
+              <li><a href="">About</a></li>
+            </div>
+            <div class="bc">
+              <li><a href="">Menu</a></li>
+              <li><a href="">Home1</a></li>
+              <li><a href="">Home2</a></li>
+              <li><a href="">About</a></li>
+            </div>
+          </div>
+        </ul>
+      </div>
+      <a class="logo" href="#">STONE SIP
+        <img src="./Firefly_RemoveBackground.png" alt="" class="navimg">
+      </a>
+      <div style="display: flex; color:saddlebrown ; "><svg xmlns="http://www.w3.org/2000/svg" width="36" height="36"
+          fill="currentColor" class="bi bi-arrow-up-right-circle-fill  d-none  d-lg-flex mt-3" viewBox="0 0 16 16">
+          <path
+            d="M0 8a8 8 0 1 0 16 0A8 8 0 0 0 0 8m5.904 2.803a.5.5 0 1 1-.707-.707L9.293 6H6.525a.5.5 0 1 1 0-1H10.5a.5.5 0 0 1 .5.5v3.975a.5.5 0 0 1-1 0V6.707z" />
+        </svg>
+        <a href="#Buynow" style="text-decoration: none;" class="drop  d-lg-block d-none">Buy Now</a>
+
+        <img src="./coffee3-removebg-preview-removebg-preview.png" alt="" class="navcup">
+      </div>
+
+
+    </div>
+    <div class="cart_item">
+      <div class="cart_title">Your Cart</div>
+      <div style="display: flex; justify-content: space-between; align-items: center;">
+        <div><img src="" alt="" class="img-fluid " id="cartimg"></div>
+        <div class="cart_content">
+          <div style="color: saddlebrown; font-weight: bold;" id="cartname"></div>
+          <div id="cartprice"></div>
+        </div>
+      </div>
+      <i class="bi bi-x-square-fill cart_cancel"></i>
+       <div style="justify-content: center; display: flex;">Add cart items</div>
+    </div>
+
+  </header>
+  <section>
+    <div class="container">
+      <div class="starflex">
+        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
+          class="bi bi-star-fill star pe-2" viewBox="0 0 16 16">
+          <path
+            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
+          class="bi bi-star-fill star pe-2" viewBox="0 0 16 16">
+          <path
+            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
+          class="bi bi-star-fill star pe-2" viewBox="0 0 16 16">
+          <path
+            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
+          class="bi bi-star-fill star pe-2" viewBox="0 0 16 16">
+          <path
+            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
+          class="bi bi-star-fill star pe-2" viewBox="0 0 16 16">
+          <path
+            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+        </svg>
+        334 Reviews
+      </div>
+      <div class="display-1 smooth">
+        SMOOTH COLD <br> BREW,PERFECTLY <br> CANNED
+      </div>
+      <div class="smooth1">
+        Slow-steeped for hours, never bitter.
+      </div>
+      <div class="smooth2" style="display: flex; color:saddlebrown ; "><svg xmlns="http://www.w3.org/2000/svg"
+          width="36" height="36" fill="currentColor" class="bi bi-arrow-up-right-circle-fill  d-none  d-lg-flex mt-3"
+          viewBox="0 0 16 16">
+          <path
+            d="M0 8a8 8 0 1 0 16 0A8 8 0 0 0 0 8m5.904 2.803a.5.5 0 1 1-.707-.707L9.293 6H6.525a.5.5 0 1 1 0-1H10.5a.5.5 0 0 1 .5.5v3.975a.5.5 0 0 1-1 0V6.707z" />
+        </svg>
+        <button class=" drop text-light d-none  d-lg-flex">Buy Now</button>
+
+      </div>
+  </section>
+  <section style="display: flex; justify-content: center;">
+    <img src="./coffee2.jpg" alt="" class="img-fluid mt-5 h-50 w-75">
+  </section>
+  <section class="bg1">
+  </section>
+  <section style="display: flex; justify-content: center; height: 400px;align-items: center; text-align: center;">
+    <div class="display-3" style="font-family:monospace;  color: rgb(250, 199, 163);">COLD BREW <br>
+      WITHOUT ANY <br> COMPROMISE.</div>
+  </section>
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class=" col-4 ">
+          <img src="./coffee6.jpg" alt="" class="img-fluid im1 ">
+          <img src="./coffee5.jpg" alt="" class="img-fluid im2 ">
+          <img src="./coffee4.jpg" alt="" class="img-fluid im3 ">
+        </div>
+        <div class="col-3"></div>
+        <div class="col-5">
+          <div class="mt-lg-5 h4 drink" style="color:saddlebrown ;">COLD BREW MADE THE RIGHT WAY</div>
+          <div style="color: antiquewhite;" class="drink1">We brew slowly, never rush the process, and use carefully
+            selected beans to
+            create cold brew that’s smooth, balanced, and easy to enjoyanytime, anywhere.</div>
+          <div class=" mt-lg-5" style="display: flex; color:saddlebrown ; "><svg xmlns="http://www.w3.org/2000/svg"
+              width="36" height="36" fill="currentColor" class="bi bi-arrow-up-right-circle-fill   mt-3"
+              viewBox="0 0 16 16">
+              <path
+                d="M0 8a8 8 0 1 0 16 0A8 8 0 0 0 0 8m5.904 2.803a.5.5 0 1 1-.707-.707L9.293 6H6.525a.5.5 0 1 1 0-1H10.5a.5.5 0 0 1 .5.5v3.975a.5.5 0 0 1-1 0V6.707z" />
+            </svg>
+            <button class=" dropp text-light ">Learn More</button>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="mt-5" id="Buynow">
+    <div class="container ">
+      <div class="row">
+        <div class="col-lg-7  col-12 display-3 mt-4 " style="color: saddlebrown;">
+          THE DRINK lINEUP
+        </div>
+        <div class="col-lg-5 col-12">
+          <div class="smooth2" style="display: flex; color:saddlebrown ; justify-content: end;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor"
+              class="bi bi-arrow-up-right-circle-fill  d-lg-flex  d-none mt-3" viewBox="0 0 16 16">
+              <path
+                d="M0 8a8 8 0 1 0 16 0A8 8 0 0 0 0 8m5.904 2.803a.5.5 0 1 1-.707-.707L9.293 6H6.525a.5.5 0 1 1 0-1H10.5a.5.5 0 0 1 .5.5v3.975a.5.5 0 0 1-1 0V6.707z" />
+            </svg>
+            <button class=" dropp text-light d-lg-flex d-none">Learn More</button>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <figure class="fig ">
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-lg-6  col-12 card_car">
+          <div class="col-6 " style="border: 2px solid rgb(255, 255, 254); padding: 20px; margin-top: 20px;">
+            <div class="cardd ">
+              <div style="display: flex; justify-content: space-between;">
+                <div class="seller">
+                  BEST SELLER</div>
+                <div style="color: rgb(250, 199, 163);  margin-top: 10px;" class="price">$33.00 USD</div>
+              </div>
+              <img src="./coldbrew1.png" alt="" class="img-fluid">
+            </div>
+
+            <div class="row ">
+
+              <div class="col-6 vannila" style=" color:saddlebrown ; font-weight: bold; ">VANNILA BEAN</div>
+              <div class=" col-6" style=" color:saddlebrown ; ">
+                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor"
+                  class="bi bi-arrow-up-right-circle-fill v d-lg-block d-none viewBtn " viewBox="0 0 16 16">
+                  <path
+                    d="M0 8a8 8 0 1 0 16 0A8 8 0 0 0 0 8m5.904 2.803a.5.5 0 1 1-.707-.707L9.293 6H6.525a.5.5 0 1 1 0-1H10.5a.5.5 0 0 1 .5.5v3.975a.5.5 0 0 1-1 0V6.707z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="bi bi-arrow-up-right-circle-fill v  d-lg-none d-block viewBtn" viewBox="0 0 16 16">
+                  <path
+                    d="M0 8a8 8 0 1 0 16 0A8 8 0 0 0 0 8m5.904 2.803a.5.5 0 1 1-.707-.707L9.293 6H6.525a.5.5 0 1 1 0-1H10.5a.5.5 0 0 1 .5.5v3.975a.5.5 0 0 1-1 0V6.707z" />
+                </svg>
+              </div>
+
+            </div>
+          </div>
+          <div class="col-6 " style="border: 2px solid rgb(255, 255, 254); padding: 20px; margin-top: 20px;">
+            <div class="cardd">
+              <div style="display: flex; justify-content: space-between;">
+                <div class="seller">
+                  BEST SELLER</div>
+                <div style="color: rgb(250, 199, 163);  margin-top: 10px;" class="price">$33.00 USD</div>
+              </div>
+              <img src="./coldbrew2.png" alt="" class="img-fluid">
+            </div>
+
+            <div class="row">
+
+              <div class="col-6 vannila" style=" color:saddlebrown ; font-weight: bold; ">CARAMEL DRIZ</div>
+              <div class=" col-6" style=" color:saddlebrown ; ">
+                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor"
+                  class="bi bi-arrow-up-right-circle-fill v d-lg-block d-none viewBtn" viewBox="0 0 16 16">
+                  <path
+                    d="M0 8a8 8 0 1 0 16 0A8 8 0 0 0 0 8m5.904 2.803a.5.5 0 1 1-.707-.707L9.293 6H6.525a.5.5 0 1 1 0-1H10.5a.5.5 0 0 1 .5.5v3.975a.5.5 0 0 1-1 0V6.707z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="bi bi-arrow-up-right-circle-fill v  d-lg-none d-block viewBtn" viewBox="0 0 16 16">
+                  <path
+                    d="M0 8a8 8 0 1 0 16 0A8 8 0 0 0 0 8m5.904 2.803a.5.5 0 1 1-.707-.707L9.293 6H6.525a.5.5 0 1 1 0-1H10.5a.5.5 0 0 1 .5.5v3.975a.5.5 0 0 1-1 0V6.707z" />
+                </svg>
+              </div>
+
+            </div>
+          </div>
+          <div class="col-6 " style="border: 2px solid rgb(255, 255, 254); padding: 20px; margin-top: 20px;">
+            <div class="cardd">
+              <div style="display: flex; justify-content: space-between;">
+                <div class="seller">
+                  BEST SELLER</div>
+                <div style="color: rgb(250, 199, 163); margin-top: 10px; " class="price">$33.00 USD</div>
+              </div>
+              <img src="./coldbrew3.png" alt="" class="img-fluid">
+            </div>
+
+            <div class="row">
+
+              <div class="col-6 vannila" style=" color:saddlebrown ;font-weight: bold;  ">MOCHA SWIRL</div>
+              <div class=" col-6" style=" color:saddlebrown ; ">
+                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor"
+                  class="bi bi-arrow-up-right-circle-fill v d-lg-block d-none  viewBtn" viewBox="0 0 16 16">
+                  <path
+                    d="M0 8a8 8 0 1 0 16 0A8 8 0 0 0 0 8m5.904 2.803a.5.5 0 1 1-.707-.707L9.293 6H6.525a.5.5 0 1 1 0-1H10.5a.5.5 0 0 1 .5.5v3.975a.5.5 0 0 1-1 0V6.707z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="bi bi-arrow-up-right-circle-fill v  d-lg-none d-block viewBtn" viewBox="0 0 16 16">
+                  <path
+                    d="M0 8a8 8 0 1 0 16 0A8 8 0 0 0 0 8m5.904 2.803a.5.5 0 1 1-.707-.707L9.293 6H6.525a.5.5 0 1 1 0-1H10.5a.5.5 0 0 1 .5.5v3.975a.5.5 0 0 1-1 0V6.707z" />
+                </svg>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6  col-12 card_car">
+          <div class="col-6 " style="border: 2px solid rgb(255, 255, 254); padding: 20px;  margin-top: 20px; ">
+            <div class="cardd">
+              <div style="display: flex; justify-content: space-between;">
+                <div class="seller">
+                  BEST SELLER</div>
+                <div style="color: rgb(250, 199, 163); margin-top: 10px; " class="price">$33.00 USD</div>
+              </div>
+              <img src="./coldbrew7.png" alt="" class="img-fluid">
+            </div>
+
+            <div class="row">
+
+              <div class="col-6 vannila" style=" color:saddlebrown ;font-weight: bold;  ">COCONUT FRESH</div>
+              <div class=" col-6" style=" color:saddlebrown ; ">
+                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor"
+                  class="bi bi-arrow-up-right-circle-fill v d-lg-block d-none viewBtn  " viewBox="0 0 16 16">
+                  <path
+                    d="M0 8a8 8 0 1 0 16 0A8 8 0 0 0 0 8m5.904 2.803a.5.5 0 1 1-.707-.707L9.293 6H6.525a.5.5 0 1 1 0-1H10.5a.5.5 0 0 1 .5.5v3.975a.5.5 0 0 1-1 0V6.707z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="bi bi-arrow-up-right-circle-fill v  d-lg-none d-block viewBtn" viewBox="0 0 16 16">
+                  <path
+                    d="M0 8a8 8 0 1 0 16 0A8 8 0 0 0 0 8m5.904 2.803a.5.5 0 1 1-.707-.707L9.293 6H6.525a.5.5 0 1 1 0-1H10.5a.5.5 0 0 1 .5.5v3.975a.5.5 0 0 1-1 0V6.707z" />
+                </svg>
+              </div>
+
+            </div>
+          </div>
+          <div class="col-6 " style="border: 2px solid rgb(255, 255, 254); padding: 20px; margin-top: 20px;">
+            <div class="cardd">
+              <div style="display: flex; justify-content: space-between;">
+                <div class="seller">
+                  BEST SELLER</div>
+                <div style="color: rgb(250, 199, 163);  margin-top: 10px;" class="price">$33.00 USD</div>
+              </div>
+              <img src="./coldbrew8.png" alt="" class="img-fluid">
+            </div>
+
+            <div class="row ">
+
+              <div class="col-6 vannila" style=" color:saddlebrown ; font-weight: bold; ">MARSH <br>MELLOW</div>
+              <div class=" col-6" style=" color:saddlebrown ; ">
+                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor"
+                  class="bi bi-arrow-up-right-circle-fill v d-lg-block d-none viewBtn  " viewBox="0 0 16 16">
+                  <path
+                    d="M0 8a8 8 0 1 0 16 0A8 8 0 0 0 0 8m5.904 2.803a.5.5 0 1 1-.707-.707L9.293 6H6.525a.5.5 0 1 1 0-1H10.5a.5.5 0 0 1 .5.5v3.975a.5.5 0 0 1-1 0V6.707z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="bi bi-arrow-up-right-circle-fill v  d-lg-none d-block viewBtn" viewBox="0 0 16 16">
+                  <path
+                    d="M0 8a8 8 0 1 0 16 0A8 8 0 0 0 0 8m5.904 2.803a.5.5 0 1 1-.707-.707L9.293 6H6.525a.5.5 0 1 1 0-1H10.5a.5.5 0 0 1 .5.5v3.975a.5.5 0 0 1-1 0V6.707z" />
+                </svg>
+              </div>
+
+            </div>
+          </div>
+          <div class="col-6 " style="border: 2px solid rgb(255, 255, 254); padding: 20px; margin-top: 20px;">
+            <div class="cardd">
+              <div style="display: flex; justify-content: space-between;">
+                <div class="seller">
+                  BEST SELLER</div>
+                <div style="color: rgb(250, 199, 163); margin-top: 10px; " class="price">$33.00 USD</div>
+              </div>
+              <img src="./coldbrew6.png" alt="" class="img-fluid">
+            </div>
+
+            <div class="row">
+
+              <div class="col-6 vannila" style=" color:saddlebrown ; font-weight: bold; ">MAPLE <br> OAT</div>
+              <div class=" col-6" style=" color:saddlebrown ; ">
+                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor"
+                  class="bi bi-arrow-up-right-circle-fill v d-lg-block d-none viewBtn  " viewBox="0 0 16 16">
+                  <path
+                    d="M0 8a8 8 0 1 0 16 0A8 8 0 0 0 0 8m5.904 2.803a.5.5 0 1 1-.707-.707L9.293 6H6.525a.5.5 0 1 1 0-1H10.5a.5.5 0 0 1 .5.5v3.975a.5.5 0 0 1-1 0V6.707z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="bi bi-arrow-up-right-circle-fill v  d-lg-none d-block viewBtn" viewBox="0 0 16 16">
+                  <path
+                    d="M0 8a8 8 0 1 0 16 0A8 8 0 0 0 0 8m5.904 2.803a.5.5 0 1 1-.707-.707L9.293 6H6.525a.5.5 0 1 1 0-1H10.5a.5.5 0 0 1 .5.5v3.975a.5.5 0 0 1-1 0V6.707z" />
+                </svg>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </figure>
+  <section class="mt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-6">
+          <img src="./coffee8.jpg" alt="" class="img-fluid w-100">
+          <div class="col-12">
+            <div
+              style="color: saddlebrown; font-weight: bold; font-size: 35px; font-family:sans-serif; line-height: 35px; margin-top: 20px;"
+              class="about">
+              Our journey began with a single cup of coffee, sparking a passion for crafting the perfect cold brew.
+            </div>
+            <div style="font-size: small; margin-top: 20px;color: rgb(250, 199, 163);" class="us">
+              Stone Sip was created with one simple goal: to make cold brew that tastes great and fits effortlessly into
+              everyday life. We believe good coffee shouldn’t be complicated—just carefully brewed, thoughtfully
+              sourced, and ready when you are.
+
+
+            </div>
+            <div class="mt-5" style="display: flex; color:saddlebrown ; "><svg xmlns="http://www.w3.org/2000/svg"
+                width="36" height="36" fill="currentColor"
+                class="bi bi-arrow-up-right-circle-fill  d-none  d-lg-flex mt-3" viewBox="0 0 16 16">
+                <path
+                  d="M0 8a8 8 0 1 0 16 0A8 8 0 0 0 0 8m5.904 2.803a.5.5 0 1 1-.707-.707L9.293 6H6.525a.5.5 0 1 1 0-1H10.5a.5.5 0 0 1 .5.5v3.975a.5.5 0 0 1-1 0V6.707z" />
+              </svg>
+              <button class=" drop text-light d-none  d-lg-flex " id="aboutBtn">About Us</button>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-6"><img src="./coffee9.jpg" alt="" class="img-fluid"></div>
+      </div>
+    </div>
+  </section>
+  <section class="sec">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-12 mt-5">
+          <div class="card_1 ">
+            <img src="./gir1.jpg" alt="" class="rounded-circle w-50 h-75">
+            <div style="font-weight: bold; ">MIKE.S</div>
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
+                class="bi bi-star-fill star pe-1" viewBox="0 0 16 16">
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
+                class="bi bi-star-fill star pe-1" viewBox="0 0 16 16">
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
+                class="bi bi-star-fill star pe-1" viewBox="0 0 16 16">
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
+                class="bi bi-star-fill star pe-1" viewBox="0 0 16 16">
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
+                class="bi bi-star-fill star pe-1" viewBox="0 0 16 16">
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+              </svg>
+            </div>
+            <div style="color: black;">CLEAN AND REFRESHING</div>
+            <div>"Super smooth with a rich coffee flavor. It’s refreshing without being watered down."</div>
+            <div style="display: flex; ">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-patch-check-fill " viewBox="0 0 16 16" style="color: rgb(4, 138, 4); margin: 5px;">
+                <path
+                  d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708" />
+              </svg>
+              <div>Verified</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-12 mt-5">
+          <div class="card_1 ">
+            <img src="./gi3 (1).jpg" alt="" class="rounded-circle w-50 h-75">
+            <div style="font-weight: bold; ">Lakshmi.J</div>
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
+                class="bi bi-star-fill star pe-1" viewBox="0 0 16 16">
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
+                class="bi bi-star-fill star pe-1" viewBox="0 0 16 16">
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
+                class="bi bi-star-fill star pe-1" viewBox="0 0 16 16">
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
+                class="bi bi-star-fill star pe-1" viewBox="0 0 16 16">
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
+                class="bi bi-star-fill star pe-1" viewBox="0 0 16 16">
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+              </svg>
+            </div>
+            <div style="color: black;">CLEAN AND REFRESHING</div>
+            <div>"Super smooth with a rich coffee flavor. It’s refreshing without being watered down."</div>
+            <div style="display: flex; ">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-patch-check-fill " viewBox="0 0 16 16" style="color: rgb(4, 138, 4); margin: 5px;">
+                <path
+                  d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708" />
+              </svg>
+              <div>Verified</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-12 mt-5">
+          <div class="card_1 ">
+            <img src="./6.jpg" alt="" class="rounded-circle w-50 h-75">
+            <div style="font-weight: bold; ">Sherli Renu</div>
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
+                class="bi bi-star-fill star pe-1" viewBox="0 0 16 16">
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
+                class="bi bi-star-fill star pe-1" viewBox="0 0 16 16">
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
+                class="bi bi-star-fill star pe-1" viewBox="0 0 16 16">
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
+                class="bi bi-star-fill star pe-1" viewBox="0 0 16 16">
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
+                class="bi bi-star-fill star pe-1" viewBox="0 0 16 16">
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+              </svg>
+            </div>
+            <div style="color: black;">CLEAN AND REFRESHING</div>
+            <div>"Super smooth with a rich coffee flavor. It’s refreshing without being watered down."</div>
+            <div style="display: flex; ">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-patch-check-fill " viewBox="0 0 16 16" style="color: rgb(4, 138, 4); margin: 5px;">
+                <path
+                  d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708" />
+              </svg>
+              <div>Verified</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="container">
+      <div class="row g-4">
+
+
+        <div class="col-lg-4 col-md-6 col-12">
+          <h3 class="footer-logo">STONE SIP</h3>
+          <p class="footer-text">
+            Slow-steeped cold brew, never bitter. Smooth, balanced, and ready when you are.
+          </p>
+          <div class="footer-social">
+            <a href="#"><i class="bi bi-instagram"></i></a>
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-twitter-x"></i></a>
+            <a href="#"><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+
+
+        <div class="col-lg-2 col-md-6 col-6">
+          <h5 class="footer-title">MENU</h5>
+          <ul class="footer-links">
+            <li><a href="project5.html" class="footer-linkss">Home</a></li>
+            <li><a href="#" class="footer-linkss">Shop</a></li>
+            <li><a href="aboutus.html" class="footer-linkss">About</a></li>
+            <li><a href="#" class="footer-linkss">Contact</a></li>
+          </ul>
+        </div>
+
+
+        <div class="col-lg-2 col-md-6 col-6">
+          <h5 class="footer-title">FLAVORS</h5>
+          <ul class="footer-links">
+            <li><a href="#" class="footer-linkss">Vanilla Bean</a></li>
+            <li><a href="#" class="footer-linkss">Caramel Driz</a></li>
+            <li><a href="#" class="footer-linkss">Mocha Swirl</a></li>
+            <li><a href="#" class="footer-linkss">Maple Oat</a></li>
+          </ul>
+        </div>
+
+
+        <div class="col-lg-4 col-md-6 col-12">
+          <h5 class="footer-title">JOIN OUR NEWSLETTER</h5>
+          <div class="footer-form">
+            <input type="email" placeholder="Enter your email">
+            <button type="button">Submit</button>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        &copy; 2026 Stone Sip. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+  <script src="project5.js">
+
+  </script>
+</body>
+
+</html>
