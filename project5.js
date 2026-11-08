@@ -1,4 +1,3 @@
- 
 const aboutBtn = document.getElementById('aboutBtn');
 if (aboutBtn) {
   aboutBtn.addEventListener('click', () => {
