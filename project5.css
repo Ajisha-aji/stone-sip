@@ -346,7 +346,9 @@ li a{
 }
 
 @media(max-width:996px){
-
+.img_product{
+    height: 15% !important;
+}
 .links{
     display: none;
 }
